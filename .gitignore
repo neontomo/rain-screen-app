@@ -1,0 +1,141 @@
+references
+
+# Xcode
+#
+.DS_Store
+*/.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+#
+.build/
+Package.resolved
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# CocoaPods
+#
+Pods/
+Podfile.lock
+
+# Carthage
+#
+Carthage/Build/
+
+# Accio dependency management
+#
+Dependencies/
+.accio/
+
+# fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Code Coverage
+#
+xccovreport/
+xccovarchive/
+
+# xcodeproj
+#
+project.xcworkspace/
+xcuserdata/
+*.moved-aside
+*.xcuserstate
+
+# Xcode iOS
+#
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode macOS
+#
+*.hmap
+*.app
+*.dSYM.zip
+*.dSYM
+*.plist
+
+# Xcode Model Files
+#
+*.xcdatamodeld/
+*.xcdatamodel/
+
+# Xcode Core Data
+#
+*.xccurrentversion
+
+# Additional Files
+#
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+*.rsrc
+*.xcassets
+*.xcuserstate
+
+# User-specific files
+#
+*.swp
+*.swo
+*~.nib
+*~.plist
+*~.pbxuser
+
+# IDE Preferences
+#
+.idea/
+.vscode/
+
+# App-specific
+#
+*.log
+*.swift
+
+*.code-workspace
+**/NOTES.md
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
