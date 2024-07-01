@@ -5,61 +5,187 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>rain screen - a mac app</title>
+    <title>rain screen - make your mac rain</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icon.png" />
+
     <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial,
+          sans-serif, Helvetica, sans-serif;
+        color: #333;
+        background-color: #fdfdfd;
+        margin: 0;
+        padding: 0;
+      }
       main {
         max-width: 700px;
-        margin: 0 auto;
+        margin: 50px auto 200px auto;
+        padding: 10px;
+      }
+
+      h1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 35px;
+      }
+
+      a {
+        color: #339cc2;
+      }
+
+      img#icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      img#screenshot {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+      }
+
+      img#screenshot:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: scale(1.01);
+      }
+
+      #download {
+        width: 150px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      #download:hover {
+        transform: scale(1.05);
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      main > div {
+        margin-bottom: 30px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>rain screen</h1>
-      <p>
-        a cute app to make your mac rain.
-        <br />
-        great for studying and soothing your nerves.
-        <br />comes with optional rain sound effects & controls for speed and
-        rain amount!
-      </p>
-      <br />
-      <br />
-      <p>watch this space...</p>
-      <br />
-      <br />
-      <p>more to come soon :-)</p>
+      <nav>
+        <h1>
+          <img
+            id="icon"
+            src="img/icon.png" />rain screen
+        </h1>
+      </nav>
 
-      <h2>links</h2>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://github.com/neontomo/rain-screen-app/blob/main/PRIVACY.md"
-            >privacy policy</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://github.com/neontomo"
-            >my other projects</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://overstimulated.netlify.app/"
-            >check out my app "overstimulated" - for neurodivergent people</a
-          >
-        </li>
-        <li>
-          <a
-            href="mailto:tomomyrman+rainscreen@proton.me?subject=question+about+rain+screen"
-            >email me</a
-          >
-        </li>
-      </ul>
+      <div>
+        <h3>a cute app to make your mac rain.</h3>
+        <p>great for studying and soothing your nerves.</p>
+      </div>
+
+      <div>
+        <a
+          title="download in app store"
+          target="_blank"
+          href="https://apps.apple.com/se/app/rain-screen/id6505049609"
+          ><img
+            id="download"
+            alt="download in app store"
+            src="img/download.svg"
+        /></a>
+      </div>
+
+      <div>
+        <h3>comes with:</h3>
+        <ul>
+          <li>rain animations</li>
+          <li>optional rain sound effects</li>
+          <li>controls for speed</li>
+          <li>controls for rain amount</li>
+          <li>more to come soon :-&#41;</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>screenshots</h3>
+        <a
+          title="screenshot of rain screen"
+          href="img/screenshot.png"
+          target="_blank">
+          <img
+            loading="lazy"
+            id="screenshot"
+            src="img/screenshot.png"
+            alt="screenshot of rain screen" />
+        </a>
+      </div>
+
+      <div>
+        <h3>links</h3>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/neontomo/rain-screen-app/blob/main/PRIVACY.md"
+              >privacy policy</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/neontomo"
+              >my other projects</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://overstimulated.netlify.app/"
+              >my app "overstimulated"</a
+            >
+            - for neurodivergent people
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>socials</h3>
+        <ul>
+          <li>
+            <a
+              href="mailto:tomomyrman+rainscreen@proton.me?subject=question+about+rain+screen"
+              >email me</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://twitter.com/neontomo"
+              >x / twitter</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/tomo-myrman"
+              >linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+
       <footer>
         <p>© 2024 tomo myrman</p>
       </footer>
