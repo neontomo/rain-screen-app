@@ -5,143 +5,180 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>rain screen - make your mac rain</title>
+    <title>rain screen - make your computer rain</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
-      href="img/icon.png" />
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png" />
+    <link
+      rel="manifest"
+      href="img/favicon/site.webmanifest" />
+    <meta
+      name="msapplication-TileColor"
+      content="#da532c" />
+    <meta
+      name="theme-color"
+      content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
 
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial,
-          sans-serif, Helvetica, sans-serif;
-        color: #333;
-        background-color: #fdfdfd;
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        max-width: 700px;
-        margin: 50px auto 200px auto;
-        padding: 10px;
-      }
+    <!-- Basic SEO tags -->
+    <link
+      rel="canonical"
+      href="https://rain-screen.netlify.app" />
+    <meta
+      name="description"
+      content="a cute app to make your computer rain. great for studying & soothing your nerves. optional soothing rain sound effects. controls for rain speed & amount." />
+    <meta
+      name="keywords"
+      content="meditation,rain,rainy,rainymood,screensaver,weather,lofi,rain mood,downpour,rain sounds,rain sound" />
 
-      h1 {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 35px;
-      }
+    <!-- Facebook meta tags -->
+    <meta
+      property="og:url"
+      content="https://rain-screen.netlify.app" />
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      property="og:title"
+      content="rain screen - make your computer rain" />
+    <meta
+      property="og:description"
+      content="a cute app to make your computer rain. great for studying & soothing your nerves. optional soothing rain sound effects. controls for rain speed & amount." />
+    <meta
+      property="og:image"
+      content="https://rain-screen.netlify.app/img/ogimage.png" />
 
-      a {
-        color: #339cc2;
-      }
-
-      img#icon {
-        width: 50px;
-        height: 50px;
-      }
-
-      img#screenshot {
-        width: 100%;
-        max-width: 700px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.2s ease-in-out;
-      }
-
-      img#screenshot:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        transform: scale(1.01);
-      }
-
-      #download {
-        width: 150px;
-        transition: all 0.2s ease-in-out;
-      }
-
-      #download:hover {
-        transform: scale(1.05);
-      }
-
-      .bold {
-        font-weight: bold;
-      }
-
-      main > div {
-        margin-bottom: 30px;
-      }
-
-      footer {
-        text-align: center;
-        margin-top: 100px;
-        font-size: 14px;
-      }
-    </style>
+    <!-- Twitter meta tags -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image" />
+    <meta
+      property="twitter:domain"
+      content="neontomo.com" />
+    <meta
+      property="og:url"
+      content="https://rain-screen.netlify.app" />
+    <meta
+      property="og:title"
+      content="rain screen - make your computer rain" />
+    <meta
+      property="og:description"
+      content="a cute app to make your computer rain. great for studying & soothing your nerves. optional soothing rain sound effects. controls for rain speed & amount." />
+    <meta
+      property="og:image"
+      content="https://rain-screen.netlify.app/img/ogimage.png" />
   </head>
   <body>
     <main>
       <nav>
-        <h1>
+        <h3>
           <img
             id="icon"
-            src="img/icon.png" />rain screen
-        </h1>
+            src="img/icon.webp" />rain screen
+        </h3>
       </nav>
 
-      <div>
-        <h3>a cute app to make your mac rain.</h3>
-        <p>great for studying and soothing your nerves.</p>
+      <div id="landing">
+        <div>
+          <h1>a cute app to make your computer rain.</h1>
+          <p>great for studying & soothing your nerves. available for macos.</p>
+
+          <div class="appstore-button">
+            <a
+              title="download in app store"
+              target="_blank"
+              href="https://apps.apple.com/se/app/rain-screen/id6505049609"
+              ><img
+                class="download zoom-on-hover"
+                alt="download in app store"
+                src="img/download.svg"
+            /></a>
+          </div>
+        </div>
+
+        <div>
+          <h3>comes with:</h3>
+          <ul class="no-list">
+            <li>🌧️ rain animations</li>
+            <li>🔊 soothing rain sound</li>
+            <li>⚙️ controls for rain animations & sound</li>
+            <li>🔜 more to come soon, perhaps a schedule? :-&#41;</li>
+          </ul>
+        </div>
       </div>
 
       <div>
+        <h3>screenshots</h3>
+        <div id="slideshow">
+          <img
+            class="slideshow-img"
+            id="screenshot"
+            src="img/screenshot-1.webp"
+            alt="screenshot of rain screen" />
+          <img
+            class="slideshow-img"
+            id="screenshot"
+            src="img/screenshot-2.webp"
+            alt="screenshot of rain screen" />
+
+          <img
+            class="slideshow-img"
+            id="screenshot"
+            src="img/screenshot-3.webp"
+            alt="screenshot of rain screen" />
+        </div>
+        <div id="slideshow-controls">
+          <button
+            id="previous"
+            class="zoom-on-hover">
+            ←
+          </button>
+          <button
+            id="next"
+            class="zoom-on-hover">
+            →
+          </button>
+        </div>
+      </div>
+
+      <div id="video">
+        <video
+          id="video"
+          controls
+          src="img/rain screen.mp4"
+          type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="appstore-button center zoom-on-hover">
         <a
           title="download in app store"
           target="_blank"
           href="https://apps.apple.com/se/app/rain-screen/id6505049609"
           ><img
-            id="download"
+            class="download"
             alt="download in app store"
             src="img/download.svg"
         /></a>
       </div>
 
       <div>
-        <h3>comes with:</h3>
-        <ul>
-          <li>rain animations</li>
-          <li>optional rain sound effects</li>
-          <li>controls for speed</li>
-          <li>controls for rain amount</li>
-          <li>more to come soon :-&#41;</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>screenshots</h3>
-        <a
-          title="screenshot of rain screen"
-          href="img/screenshot.png"
-          target="_blank">
-          <img
-            loading="lazy"
-            id="screenshot"
-            src="img/screenshot.png"
-            alt="screenshot of rain screen" />
-        </a>
-      </div>
-
-      <div>
         <h3>links</h3>
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/neontomo/rain-screen-app/blob/main/PRIVACY.md"
-              >privacy policy</a
-            >
-          </li>
+        <ul class="no-list">
           <li>
             <a
               target="_blank"
@@ -162,13 +199,7 @@
 
       <div>
         <h3>socials</h3>
-        <ul>
-          <li>
-            <a
-              href="mailto:tomomyrman+rainscreen@proton.me?subject=question+about+rain+screen"
-              >email me</a
-            >
-          </li>
+        <ul class="no-list">
           <li>
             <a
               target="_blank"
@@ -187,8 +218,26 @@
       </div>
 
       <footer>
-        <p>© 2024 tomo myrman</p>
+        <p>2024 © tomo myrman</p>
+        <div id="footer-links">
+          <a
+            target="_blank"
+            href="https://github.com/neontomo/rain-screen-app/blob/main/PRIVACY.md"
+            >privacy policy</a
+          >
+          <a
+            href="mailto:tomomyrman+rainscreen@proton.me?subject=question+about+rain+screen"
+            >email</a
+          >
+          <a
+            target="_blank"
+            href="https://apps.apple.com/se/app/rain-screen/id6505049609"
+            >app store</a
+          >
+        </div>
       </footer>
+      <div id="rain"></div>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
