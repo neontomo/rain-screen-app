@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E55DBDBD2C355A6C004D90DF /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E55DBDBC2C355A6C004D90DF /* rain.mp3 */; };
+		E51BE7192C39433C00DCD80C /* thunder-nostalgic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7102C39433600DCD80C /* thunder-nostalgic.mp3 */; };
+		E51BE71A2C39433C00DCD80C /* thunder-submerged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7112C39433700DCD80C /* thunder-submerged.mp3 */; };
+		E51BE71B2C39433C00DCD80C /* rain-muted.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7122C39433800DCD80C /* rain-muted.mp3 */; };
+		E51BE71C2C39433C00DCD80C /* rain-forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7132C39433900DCD80C /* rain-forest.mp3 */; };
+		E51BE71D2C39433C00DCD80C /* thunder-gods.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7142C39433A00DCD80C /* thunder-gods.mp3 */; };
+		E51BE71E2C39433C00DCD80C /* rain-porch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7152C39433A00DCD80C /* rain-porch.mp3 */; };
+		E51BE71F2C39433C00DCD80C /* thunder-brewing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7162C39433B00DCD80C /* thunder-brewing.mp3 */; };
+		E51BE7202C39433C00DCD80C /* rain-light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7172C39433B00DCD80C /* rain-light.mp3 */; };
+		E51BE7212C39433C00DCD80C /* rain-window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7182C39433C00DCD80C /* rain-window.mp3 */; };
+		E55DBDBD2C355A6C004D90DF /* rain-default.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */; };
 		E58523712C35A56B00A3BD4F /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523702C35A56B00A3BD4F /* OpenURL.swift */; };
 		E58523732C35A5BB00A3BD4F /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523722C35A5BB00A3BD4F /* StateManager.swift */; };
 		E58523752C35A62000A3BD4F /* MenuItemsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523742C35A62000A3BD4F /* MenuItemsApp.swift */; };
@@ -24,8 +33,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E51BE7102C39433600DCD80C /* thunder-nostalgic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-nostalgic.mp3"; sourceTree = "<group>"; };
+		E51BE7112C39433700DCD80C /* thunder-submerged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-submerged.mp3"; sourceTree = "<group>"; };
+		E51BE7122C39433800DCD80C /* rain-muted.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-muted.mp3"; sourceTree = "<group>"; };
+		E51BE7132C39433900DCD80C /* rain-forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-forest.mp3"; sourceTree = "<group>"; };
+		E51BE7142C39433A00DCD80C /* thunder-gods.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-gods.mp3"; sourceTree = "<group>"; };
+		E51BE7152C39433A00DCD80C /* rain-porch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-porch.mp3"; sourceTree = "<group>"; };
+		E51BE7162C39433B00DCD80C /* thunder-brewing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-brewing.mp3"; sourceTree = "<group>"; };
+		E51BE7172C39433B00DCD80C /* rain-light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-light.mp3"; sourceTree = "<group>"; };
+		E51BE7182C39433C00DCD80C /* rain-window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-window.mp3"; sourceTree = "<group>"; };
 		E536BDB52C352256004089B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E55DBDBC2C355A6C004D90DF /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-default.mp3"; sourceTree = "<group>"; };
 		E58523702C35A56B00A3BD4F /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
 		E58523722C35A5BB00A3BD4F /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		E58523742C35A62000A3BD4F /* MenuItemsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsApp.swift; sourceTree = "<group>"; };
@@ -126,7 +144,16 @@
 		E5A6D5F62C326DEF005BEC1F /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				E55DBDBC2C355A6C004D90DF /* rain.mp3 */,
+				E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */,
+				E51BE7132C39433900DCD80C /* rain-forest.mp3 */,
+				E51BE7172C39433B00DCD80C /* rain-light.mp3 */,
+				E51BE7122C39433800DCD80C /* rain-muted.mp3 */,
+				E51BE7152C39433A00DCD80C /* rain-porch.mp3 */,
+				E51BE7182C39433C00DCD80C /* rain-window.mp3 */,
+				E51BE7162C39433B00DCD80C /* thunder-brewing.mp3 */,
+				E51BE7142C39433A00DCD80C /* thunder-gods.mp3 */,
+				E51BE7102C39433600DCD80C /* thunder-nostalgic.mp3 */,
+				E51BE7112C39433700DCD80C /* thunder-submerged.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -190,9 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59CA68D2C362E8B00DEA874 /* Info.plist in Resources */,
-				E55DBDBD2C355A6C004D90DF /* rain.mp3 in Resources */,
+				E51BE71B2C39433C00DCD80C /* rain-muted.mp3 in Resources */,
+				E51BE71D2C39433C00DCD80C /* thunder-gods.mp3 in Resources */,
+				E51BE71F2C39433C00DCD80C /* thunder-brewing.mp3 in Resources */,
+				E51BE7212C39433C00DCD80C /* rain-window.mp3 in Resources */,
+				E51BE7192C39433C00DCD80C /* thunder-nostalgic.mp3 in Resources */,
+				E51BE71A2C39433C00DCD80C /* thunder-submerged.mp3 in Resources */,
+				E55DBDBD2C355A6C004D90DF /* rain-default.mp3 in Resources */,
+				E51BE7202C39433C00DCD80C /* rain-light.mp3 in Resources */,
 				E5A6D5E32C326296005BEC1F /* Preview Assets.xcassets in Resources */,
+				E51BE71E2C39433C00DCD80C /* rain-porch.mp3 in Resources */,
 				E5A6D5E02C326296005BEC1F /* Assets.xcassets in Resources */,
+				E51BE71C2C39433C00DCD80C /* rain-forest.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
