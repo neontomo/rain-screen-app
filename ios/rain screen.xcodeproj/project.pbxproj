@@ -16,6 +16,8 @@
 		E51BE71F2C39433C00DCD80C /* thunder-brewing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7162C39433B00DCD80C /* thunder-brewing.mp3 */; };
 		E51BE7202C39433C00DCD80C /* rain-light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7172C39433B00DCD80C /* rain-light.mp3 */; };
 		E51BE7212C39433C00DCD80C /* rain-window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7182C39433C00DCD80C /* rain-window.mp3 */; };
+		E53AB52B2C397EA300E14FB9 /* MonitorSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB52A2C397EA300E14FB9 /* MonitorSection.swift */; };
+		E53AB52D2C398B3E00E14FB9 /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB52C2C398B3E00E14FB9 /* Popups.swift */; };
 		E55DBDBD2C355A6C004D90DF /* rain-default.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */; };
 		E58523712C35A56B00A3BD4F /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523702C35A56B00A3BD4F /* OpenURL.swift */; };
 		E58523732C35A5BB00A3BD4F /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523722C35A5BB00A3BD4F /* StateManager.swift */; };
@@ -43,6 +45,8 @@
 		E51BE7172C39433B00DCD80C /* rain-light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-light.mp3"; sourceTree = "<group>"; };
 		E51BE7182C39433C00DCD80C /* rain-window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-window.mp3"; sourceTree = "<group>"; };
 		E536BDB52C352256004089B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53AB52A2C397EA300E14FB9 /* MonitorSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorSection.swift; sourceTree = "<group>"; };
+		E53AB52C2C398B3E00E14FB9 /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
 		E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-default.mp3"; sourceTree = "<group>"; };
 		E58523702C35A56B00A3BD4F /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
 		E58523722C35A5BB00A3BD4F /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 				E59CA6872C362ACE00DEA874 /* CustomisationsSection.swift */,
 				E59CA6892C362B8900DEA874 /* SoundsSection.swift */,
 				E59CA68B2C362BF400DEA874 /* SystemSection.swift */,
+				E53AB52A2C397EA300E14FB9 /* MonitorSection.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				E5A6D5F22C326582005BEC1F /* MusicPlayer.swift */,
 				E58523702C35A56B00A3BD4F /* OpenURL.swift */,
 				E58523722C35A5BB00A3BD4F /* StateManager.swift */,
+				E53AB52C2C398B3E00E14FB9 /* Popups.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 			files = (
 				E59CA6882C362ACE00DEA874 /* CustomisationsSection.swift in Sources */,
 				E5A6D5F02C32633A005BEC1F /* RainFallingView.swift in Sources */,
+				E53AB52D2C398B3E00E14FB9 /* Popups.swift in Sources */,
 				E59CA6862C3628CD00DEA874 /* RainDropView.swift in Sources */,
 				E5A6D5F32C326582005BEC1F /* MusicPlayer.swift in Sources */,
+				E53AB52B2C397EA300E14FB9 /* MonitorSection.swift in Sources */,
 				E58523712C35A56B00A3BD4F /* OpenURL.swift in Sources */,
 				E58523732C35A5BB00A3BD4F /* StateManager.swift in Sources */,
 				E59CA68C2C362BF400DEA874 /* SystemSection.swift in Sources */,
@@ -381,7 +389,7 @@
 				CODE_SIGN_ENTITLEMENTS = "rain screen/rain_screen.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"rain screen/Preview Content\"";
 				DEVELOPMENT_TEAM = JT724P5MC2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -396,7 +404,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.neontomo.rain-screen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -412,7 +420,7 @@
 				CODE_SIGN_ENTITLEMENTS = "rain screen/rain_screen.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"rain screen/Preview Content\"";
 				DEVELOPMENT_TEAM = JT724P5MC2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -427,7 +435,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.neontomo.rain-screen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
