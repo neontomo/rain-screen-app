@@ -100,7 +100,6 @@ xcuserdata/
 # App-specific
 #
 *.log
-*.swift
 
 *.code-workspace
 **/NOTES.md

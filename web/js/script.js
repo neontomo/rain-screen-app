@@ -72,6 +72,11 @@ document.getElementById('next').addEventListener('click', () => {
   cycleImages((slideIndex += 1))
 })
 
+document.getElementById('more-reviews').addEventListener('click', () => {
+  //https://www.producthunt.com/posts/rain-screen
+  window.open('https://www.producthunt.com/posts/rain-screen', '_blank')
+})
+
 cycleImages(slideIndex)
 
 document.querySelectorAll('.appstore-button').forEach((button) => {

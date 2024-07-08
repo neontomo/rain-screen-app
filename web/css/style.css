@@ -180,6 +180,15 @@ footer {
   transform: scale(1.05);
 }
 
+#reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
 #product-hunt-container {
   display: flex;
   justify-content: center;
@@ -196,4 +205,9 @@ footer {
   display: flex;
   margin-top: 10px;
   max-width: 130px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: rgb(190, 190, 190);
 }
