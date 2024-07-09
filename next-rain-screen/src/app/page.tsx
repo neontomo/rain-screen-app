@@ -143,7 +143,7 @@ export default function Home() {
                 src="https://www.youtube.com/embed/UUPjqkTDTns?vq=hd1080&loop=1&modestbranding=1&rel=0&cc_load_policy=1&controls=0&disablekb=1&playlist=UUPjqkTDTns"
                 width="900"
                 height="506"
-                title="🌧️ I made a study app to make your computer rain..."></iframe>
+                title="🌧️ I made a study app to make your computer rain...."></iframe>
             ) : (
               <Image
                 key={`screenshot-${index}`}
