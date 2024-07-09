@@ -13,9 +13,9 @@ export default function Home() {
   const reviews = ['3621587', '3620667', '3623450', '3620411']
 
   const slides = [
-    'img/screenshot-1.webp',
-    'img/screenshot-2.webp',
-    'img/screenshot-3.webp',
+    '/img/screenshot-1.webp',
+    '/img/screenshot-2.webp',
+    '/img/screenshot-3.webp',
     'https://www.youtube.com/embed/UUPjqkTDTns?vq=hd1080&loop=1&modestbranding=1&rel=0&cc_load_policy=1&controls=0&disablekb=1&playlist=UUPjqkTDTns'
   ]
 
@@ -40,9 +40,11 @@ export default function Home() {
           <h4 className="flex flex-row items-center gap-2">
             <Image
               id="icon"
-              src="img/icon.webp"
+              src="/img/icon.webp"
               alt="icon"
               className="h-6 w-6"
+              width={24}
+              height={24}
             />
             rain screen
           </h4>
@@ -72,11 +74,10 @@ export default function Home() {
               id="product-hunt"
               href="https://www.producthunt.com/posts/rain-screen?embed=true&utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-rain&#0045;screen"
               target="_blank">
-              <Image
+              <img
                 src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=468288&theme=light&period=daily"
                 alt="Rain&#0032;Screen - Make&#0032;your&#0032;Mac&#0032;rain |
             Product Hunt"
-                width={180}
               />
             </a>
           </div>
@@ -151,8 +152,9 @@ export default function Home() {
                   slideActive === index ? 'active' : 'hidden'
                 }`}
                 src={slide}
-                alt=""
+                alt="screenshot"
                 width={900}
+                height={506}
               />
             )
           )}
