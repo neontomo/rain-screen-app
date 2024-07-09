@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-900;
+}
+.subtext {
+  @apply text-xs text-gray-300;
+}
+
+.zoom-on-hover {
+  @apply z-[90] transition duration-200 ease-in-out hover:scale-100 md:hover:scale-[1.02] lg:hover:scale-[1.02];
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl lg:text-7xl font-black;
+  }
+  h2 {
+    @apply text-2xl lg:text-4xl font-bold;
+  }
+  h3 {
+    @apply text-xl lg:text-3xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+}
+
+button {
+  @apply px-4 py-2 bg-[#45C5F7] text-white rounded-lg z-[90] transition duration-200 ease-in-out hover:scale-100 md:hover:scale-[1.02] lg:hover:scale-[1.02];
+}
+
+button:hover {
+  @apply opacity-90;
+}
+
+.slideshow-img {
+  @apply rounded-2xl;
+}
+
+a {
+  @apply text-[#45C5F7];
+}
+
+nav a {
+  @apply text-black;
+}
+
+#rain hr {
+  bottom: 100%;
+  @apply fixed origin-bottom opacity-40 select-none pointer-events-none border-transparent border-r-[15px] border-[#1467c2];
+}
+
+@keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+  to {
+    transform: rotate(105deg) translateX(calc(100vh + 20px));
+  }
+}

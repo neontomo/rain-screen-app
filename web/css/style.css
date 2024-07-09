@@ -52,35 +52,6 @@ img#icon {
   height: 36px;
 }
 
-img#screenshot {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out;
-}
-
-img#screenshot:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transform: scale(1.01);
-}
-
-/* video */
-
-#video {
-  display: flex;
-  justify-content: center;
-  max-width: 300px;
-  margin: 50px auto;
-}
-
-video {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 /* appstore button */
 
 .appstore-button.center {
@@ -128,28 +99,66 @@ ul.no-list {
 
 footer {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 200px;
   font-size: 14px;
 }
 
 #footer-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   items-align: center;
+  flex-wrap: wrap;
+}
+
+#footer-links a {
+  text-decoration: none;
+}
+
+#footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* slideshow */
 
+#screenshots-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#screenshots-container .subtext {
+  text-align: center;
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
 #slideshow-controls {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 #slideshow .slideshow-img.hidden {
   display: none;
+}
+
+.slideshow-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  margin: 0 auto;
+}
+
+.slideshow-img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
 
 /* landing blurbs */
@@ -180,7 +189,7 @@ footer {
   transform: scale(1.05);
 }
 
-#reviews {
+#reviews-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,8 +198,23 @@ footer {
   gap: 20px;
 }
 
+#reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  items-align: center;
+}
+
+#reviews iframe {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* product hunt */
+
 #product-hunt-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
   gap: 30px;
@@ -206,6 +230,8 @@ footer {
   margin-top: 10px;
   max-width: 130px;
 }
+
+/* other */
 
 .subtext {
   font-size: 14px;

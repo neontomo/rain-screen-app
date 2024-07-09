@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>rain screen - make your computer rain</title>
+    <title>rain screen - make your computer rain, great for studying</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -59,7 +59,7 @@
       content="a cute app to make your computer rain. great for studying & soothing your nerves. optional soothing rain sound effects. controls for rain speed & amount." />
     <meta
       property="og:image"
-      content="https://rain-screen.netlify.app/img/ogimage.png" />
+      content="https://rain-screen.netlify.app/img/ogimage/ogimage.png?v=2" />
 
     <!-- Twitter meta tags -->
     <meta
@@ -79,7 +79,7 @@
       content="a cute app to make your computer rain. great for studying & soothing your nerves. optional soothing rain sound effects. controls for rain speed & amount." />
     <meta
       property="og:image"
-      content="https://rain-screen.netlify.app/img/ogimage.png" />
+      content="https://rain-screen.netlify.app/img/ogimage/ogimage.png?v=2" />
   </head>
   <body>
     <main>
@@ -146,34 +146,45 @@
           src="img/product-hunt-5-daily.svg" />
       </div>
 
-      <div id="reviews">
+      <div id="reviews-container">
         <h3>what do people think?</h3>
-        <iframe
-          style="border: none"
-          src="https://cards.producthunt.com/cards/comments/3621587?v=1"
-          width="300"
-          height="270"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen></iframe>
+        <div id="reviews">
+          <iframe
+            style="border: none"
+            src="https://cards.producthunt.com/cards/comments/3621587?v=1"
+            width="300"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen></iframe>
 
-        <iframe
-          style="border: none"
-          src="https://cards.producthunt.com/cards/comments/3620667?v=1"
-          width="300"
-          height="270"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen></iframe>
+          <iframe
+            style="border: none"
+            src="https://cards.producthunt.com/cards/comments/3620667?v=1"
+            width="300"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen></iframe>
 
-        <iframe
-          style="border: none"
-          src="https://cards.producthunt.com/cards/comments/3623450?v=1"
-          width="300"
-          height="300"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen></iframe>
+          <iframe
+            style="border: none"
+            src="https://cards.producthunt.com/cards/comments/3623450?v=1"
+            width="300"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen></iframe>
+
+          <iframe
+            style="border: none"
+            src="https://cards.producthunt.com/cards/comments/3620411?v=1"
+            width="300"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen></iframe>
+        </div>
 
         <button
           id="more-reviews"
@@ -182,26 +193,39 @@
         </button>
       </div>
 
-      <div>
+      <div id="screenshots-container">
         <h3>screenshots</h3>
+
         <div id="slideshow">
           <img
             class="slideshow-img"
-            id="screenshot"
             src="img/screenshot-1.webp"
             alt="screenshot of rain screen" />
           <img
             class="slideshow-img"
-            id="screenshot"
             src="img/screenshot-2.webp"
             alt="screenshot of rain screen" />
 
           <img
             class="slideshow-img"
-            id="screenshot"
             src="img/screenshot-3.webp"
             alt="screenshot of rain screen" />
+
+          <iframe
+            class="slideshow-img video"
+            src="https://www.youtube.com/embed/UUPjqkTDTns?vq=hd1080&loop=1&modestbranding=1&rel=0&cc_load_policy=1&controls=0&disablekb=1&playlist=UUPjqkTDTns"
+            width="700"
+            height="394"
+            title="🌧️ I made a study app to make your computer rain..."
+            frameborder="0"
+            allowfullscreen></iframe>
+
+          <span class="subtext"
+            >ps. download the wallpaper
+            <a href="img/wallpaper-hd.png">here</a>!</span
+          >
         </div>
+
         <div id="slideshow-controls">
           <button
             id="previous"
@@ -216,16 +240,6 @@
         </div>
       </div>
 
-      <div id="video">
-        <video
-          id="video"
-          controls
-          src="img/rain screen.mp4"
-          type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
       <div class="appstore-button center zoom-on-hover">
         <a
           title="download in app store"
@@ -238,54 +252,13 @@
         /></a>
       </div>
 
-      <div>
-        <h3>links</h3>
-        <ul class="no-list">
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/neontomo"
-              >my other projects</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://overstimulated.netlify.app/"
-              >my app "overstimulated"</a
-            >
-            - for neurodivergent people
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>socials</h3>
-        <ul class="no-list">
-          <li>
-            <a
-              target="_blank"
-              href="https://twitter.com/neontomo"
-              >x / twitter</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/tomo-myrman"
-              >linkedin</a
-            >
-          </li>
-        </ul>
-      </div>
-
       <footer>
         <p>2024 © tomo myrman</p>
         <div id="footer-links">
           <a
             target="_blank"
             href="https://github.com/neontomo/rain-screen-app/blob/main/PRIVACY.md"
-            >privacy policy</a
+            >privacy</a
           >
           <a
             href="mailto:tomomyrman+rainscreen@proton.me?subject=question+about+rain+screen"
@@ -296,6 +269,16 @@
             target="_blank"
             href="https://apps.apple.com/en/app/rain-screen/id6505049609"
             >app store</a
+          >
+          <a
+            target="_blank"
+            href="https://overstimulated.netlify.app/"
+            >overstimulated app</a
+          >
+          <a
+            target="_blank"
+            href="https://github.com/neontomo"
+            >github</a
           >
         </div>
       </footer>
