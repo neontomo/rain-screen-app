@@ -33,16 +33,19 @@ Product Hunt"
 - more to come soon :-)
 
 ## screenshots
-![screenshot-3](https://github.com/neontomo/rain-screen-app/assets/105588693/4974d47a-800a-4b51-9398-f764d4d943c1)
-![screenshot-2](https://github.com/neontomo/rain-screen-app/assets/105588693/d2724e46-7df3-4d13-8800-57c01b369bb3)
-![screenshot-1](https://github.com/neontomo/rain-screen-app/assets/105588693/670749c7-668c-4aae-800f-884d37b8f186)
+![screenshot-3](https://rain-screen.netlify.app/img/screenshot-1.webp)
+
+![screenshot-2](https://rain-screen.netlify.app/img/screenshot-2.webp)
+
+![screenshot-1](https://rain-screen.netlify.app/img/screenshot-3.webp)
 
 
 ## links
 
 - [privacy policy](https://github.com/neontomo/rain-screen-app/blob/main/PRIVACY.md)
 - [my other projects](https://github.com/neontomo)
-- [my app "overstimulated"](https://overstimulated.netlify.app/)
+- [my app "overstimulated"](https://overstimulated.netlify.app)
+- [my app "coral screen" 🐠](https://coral-screen.netlify.app)
 
 ## socials
 
