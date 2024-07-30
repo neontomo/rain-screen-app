@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5691DCA2C4C5C9F00B21F58 /* rain_screen_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DC92C4C5C9F00B21F58 /* rain_screen_iosApp.swift */; };
+		E5691DCC2C4C5C9F00B21F58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DCB2C4C5C9F00B21F58 /* ContentView.swift */; };
+		E5691DCE2C4C5CA100B21F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5691DCD2C4C5CA100B21F58 /* Assets.xcassets */; };
+		E5691DD12C4C5CA100B21F58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5691DD02C4C5CA100B21F58 /* Preview Assets.xcassets */; };
+		E5691DDB2C4C5CA100B21F58 /* rain_screen_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DDA2C4C5CA100B21F58 /* rain_screen_iosTests.swift */; };
+		E5691DE52C4C5CA100B21F58 /* rain_screen_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DE42C4C5CA100B21F58 /* rain_screen_iosUITests.swift */; };
+		E5691DE72C4C5CA100B21F58 /* rain_screen_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DE62C4C5CA100B21F58 /* rain_screen_iosUITestsLaunchTests.swift */; };
+		E5691DF52C4C5DB700B21F58 /* RainDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DF42C4C5DB700B21F58 /* RainDropView.swift */; };
+		E5691DF72C4C5DC300B21F58 /* RainFallingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691DF62C4C5DC300B21F58 /* RainFallingView.swift */; };
+		E5691E1A2C4C645800B21F58 /* rain-turqoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E0F2C4C645800B21F58 /* rain-turqoise.mp3 */; };
+		E5691E1B2C4C645800B21F58 /* rain-wood-elves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E102C4C645800B21F58 /* rain-wood-elves.mp3 */; };
+		E5691E1C2C4C645800B21F58 /* rain-tickle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E112C4C645800B21F58 /* rain-tickle.mp3 */; };
+		E5691E1D2C4C645800B21F58 /* rain-muted.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E122C4C645800B21F58 /* rain-muted.mp3 */; };
+		E5691E1E2C4C645800B21F58 /* rain-old-timer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E132C4C645800B21F58 /* rain-old-timer.mp3 */; };
+		E5691E1F2C4C645800B21F58 /* rain-hickory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E142C4C645800B21F58 /* rain-hickory.mp3 */; };
+		E5691E202C4C645800B21F58 /* thunder-brewing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E152C4C645800B21F58 /* thunder-brewing.mp3 */; };
+		E5691E212C4C645800B21F58 /* thunder-thors-judgement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E162C4C645800B21F58 /* thunder-thors-judgement.mp3 */; };
+		E5691E222C4C645800B21F58 /* thunder-distant-memory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E172C4C645800B21F58 /* thunder-distant-memory.mp3 */; };
+		E5691E232C4C645800B21F58 /* thunder-submerged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5691E182C4C645800B21F58 /* thunder-submerged.mp3 */; };
+		E5691E262C4C65F500B21F58 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5691E252C4C65F500B21F58 /* SplashView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5691DD72C4C5CA100B21F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5691DBE2C4C5C9F00B21F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5691DC52C4C5C9F00B21F58;
+			remoteInfo = "rain screen ios";
+		};
+		E5691DE12C4C5CA100B21F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5691DBE2C4C5C9F00B21F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5691DC52C4C5C9F00B21F58;
+			remoteInfo = "rain screen ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5691DC62C4C5C9F00B21F58 /* rain screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rain screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5691DC92C4C5C9F00B21F58 /* rain_screen_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rain_screen_iosApp.swift; sourceTree = "<group>"; };
+		E5691DCB2C4C5C9F00B21F58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5691DCD2C4C5CA100B21F58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5691DD02C4C5CA100B21F58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5691DD62C4C5CA100B21F58 /* rain screenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rain screenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5691DDA2C4C5CA100B21F58 /* rain_screen_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rain_screen_iosTests.swift; sourceTree = "<group>"; };
+		E5691DE02C4C5CA100B21F58 /* rain screenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rain screenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5691DE42C4C5CA100B21F58 /* rain_screen_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rain_screen_iosUITests.swift; sourceTree = "<group>"; };
+		E5691DE62C4C5CA100B21F58 /* rain_screen_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rain_screen_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5691DF42C4C5DB700B21F58 /* RainDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainDropView.swift; sourceTree = "<group>"; };
+		E5691DF62C4C5DC300B21F58 /* RainFallingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainFallingView.swift; sourceTree = "<group>"; };
+		E5691E0F2C4C645800B21F58 /* rain-turqoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-turqoise.mp3"; sourceTree = "<group>"; };
+		E5691E102C4C645800B21F58 /* rain-wood-elves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-wood-elves.mp3"; sourceTree = "<group>"; };
+		E5691E112C4C645800B21F58 /* rain-tickle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-tickle.mp3"; sourceTree = "<group>"; };
+		E5691E122C4C645800B21F58 /* rain-muted.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-muted.mp3"; sourceTree = "<group>"; };
+		E5691E132C4C645800B21F58 /* rain-old-timer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-old-timer.mp3"; sourceTree = "<group>"; };
+		E5691E142C4C645800B21F58 /* rain-hickory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-hickory.mp3"; sourceTree = "<group>"; };
+		E5691E152C4C645800B21F58 /* thunder-brewing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-brewing.mp3"; sourceTree = "<group>"; };
+		E5691E162C4C645800B21F58 /* thunder-thors-judgement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-thors-judgement.mp3"; sourceTree = "<group>"; };
+		E5691E172C4C645800B21F58 /* thunder-distant-memory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-distant-memory.mp3"; sourceTree = "<group>"; };
+		E5691E182C4C645800B21F58 /* thunder-submerged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thunder-submerged.mp3"; sourceTree = "<group>"; };
+		E5691E252C4C65F500B21F58 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5691DC32C4C5C9F00B21F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5691DD32C4C5CA100B21F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5691DDD2C4C5CA100B21F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5691DBD2C4C5C9F00B21F58 = {
+			isa = PBXGroup;
+			children = (
+				E5691DC82C4C5C9F00B21F58 /* rain screen ios */,
+				E5691DD92C4C5CA100B21F58 /* rain screen iosTests */,
+				E5691DE32C4C5CA100B21F58 /* rain screen iosUITests */,
+				E5691DC72C4C5C9F00B21F58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5691DC72C4C5C9F00B21F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5691DC62C4C5C9F00B21F58 /* rain screen.app */,
+				E5691DD62C4C5CA100B21F58 /* rain screenTests.xctest */,
+				E5691DE02C4C5CA100B21F58 /* rain screenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5691DC82C4C5C9F00B21F58 /* rain screen ios */ = {
+			isa = PBXGroup;
+			children = (
+				E5691E192C4C645800B21F58 /* Audio */,
+				E5691DF32C4C5DA000B21F58 /* Views */,
+				E5691DC92C4C5C9F00B21F58 /* rain_screen_iosApp.swift */,
+				E5691DCD2C4C5CA100B21F58 /* Assets.xcassets */,
+				E5691DCF2C4C5CA100B21F58 /* Preview Content */,
+			);
+			path = "rain screen ios";
+			sourceTree = "<group>";
+		};
+		E5691DCF2C4C5CA100B21F58 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5691DD02C4C5CA100B21F58 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5691DD92C4C5CA100B21F58 /* rain screen iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5691DDA2C4C5CA100B21F58 /* rain_screen_iosTests.swift */,
+			);
+			path = "rain screen iosTests";
+			sourceTree = "<group>";
+		};
+		E5691DE32C4C5CA100B21F58 /* rain screen iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5691DE42C4C5CA100B21F58 /* rain_screen_iosUITests.swift */,
+				E5691DE62C4C5CA100B21F58 /* rain_screen_iosUITestsLaunchTests.swift */,
+			);
+			path = "rain screen iosUITests";
+			sourceTree = "<group>";
+		};
+		E5691DF32C4C5DA000B21F58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5691DCB2C4C5C9F00B21F58 /* ContentView.swift */,
+				E5691DF42C4C5DB700B21F58 /* RainDropView.swift */,
+				E5691DF62C4C5DC300B21F58 /* RainFallingView.swift */,
+				E5691E252C4C65F500B21F58 /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5691E192C4C645800B21F58 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E5691E0F2C4C645800B21F58 /* rain-turqoise.mp3 */,
+				E5691E102C4C645800B21F58 /* rain-wood-elves.mp3 */,
+				E5691E112C4C645800B21F58 /* rain-tickle.mp3 */,
+				E5691E122C4C645800B21F58 /* rain-muted.mp3 */,
+				E5691E132C4C645800B21F58 /* rain-old-timer.mp3 */,
+				E5691E142C4C645800B21F58 /* rain-hickory.mp3 */,
+				E5691E152C4C645800B21F58 /* thunder-brewing.mp3 */,
+				E5691E162C4C645800B21F58 /* thunder-thors-judgement.mp3 */,
+				E5691E172C4C645800B21F58 /* thunder-distant-memory.mp3 */,
+				E5691E182C4C645800B21F58 /* thunder-submerged.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5691DC52C4C5C9F00B21F58 /* rain screen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5691DEA2C4C5CA100B21F58 /* Build configuration list for PBXNativeTarget "rain screen" */;
+			buildPhases = (
+				E5691DC22C4C5C9F00B21F58 /* Sources */,
+				E5691DC32C4C5C9F00B21F58 /* Frameworks */,
+				E5691DC42C4C5C9F00B21F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rain screen";
+			productName = "rain screen ios";
+			productReference = E5691DC62C4C5C9F00B21F58 /* rain screen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5691DD52C4C5CA100B21F58 /* rain screenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5691DED2C4C5CA100B21F58 /* Build configuration list for PBXNativeTarget "rain screenTests" */;
+			buildPhases = (
+				E5691DD22C4C5CA100B21F58 /* Sources */,
+				E5691DD32C4C5CA100B21F58 /* Frameworks */,
+				E5691DD42C4C5CA100B21F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5691DD82C4C5CA100B21F58 /* PBXTargetDependency */,
+			);
+			name = "rain screenTests";
+			productName = "rain screen iosTests";
+			productReference = E5691DD62C4C5CA100B21F58 /* rain screenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5691DDF2C4C5CA100B21F58 /* rain screenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5691DF02C4C5CA100B21F58 /* Build configuration list for PBXNativeTarget "rain screenUITests" */;
+			buildPhases = (
+				E5691DDC2C4C5CA100B21F58 /* Sources */,
+				E5691DDD2C4C5CA100B21F58 /* Frameworks */,
+				E5691DDE2C4C5CA100B21F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5691DE22C4C5CA100B21F58 /* PBXTargetDependency */,
+			);
+			name = "rain screenUITests";
+			productName = "rain screen iosUITests";
+			productReference = E5691DE02C4C5CA100B21F58 /* rain screenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5691DBE2C4C5C9F00B21F58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E5691DC52C4C5C9F00B21F58 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E5691DD52C4C5CA100B21F58 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E5691DC52C4C5C9F00B21F58;
+					};
+					E5691DDF2C4C5CA100B21F58 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E5691DC52C4C5C9F00B21F58;
+					};
+				};
+			};
+			buildConfigurationList = E5691DC12C4C5C9F00B21F58 /* Build configuration list for PBXProject "rain screen mini" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5691DBD2C4C5C9F00B21F58;
+			productRefGroup = E5691DC72C4C5C9F00B21F58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5691DC52C4C5C9F00B21F58 /* rain screen */,
+				E5691DD52C4C5CA100B21F58 /* rain screenTests */,
+				E5691DDF2C4C5CA100B21F58 /* rain screenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5691DC42C4C5C9F00B21F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5691E1F2C4C645800B21F58 /* rain-hickory.mp3 in Resources */,
+				E5691DD12C4C5CA100B21F58 /* Preview Assets.xcassets in Resources */,
+				E5691E222C4C645800B21F58 /* thunder-distant-memory.mp3 in Resources */,
+				E5691E232C4C645800B21F58 /* thunder-submerged.mp3 in Resources */,
+				E5691E1D2C4C645800B21F58 /* rain-muted.mp3 in Resources */,
+				E5691E1C2C4C645800B21F58 /* rain-tickle.mp3 in Resources */,
+				E5691E1A2C4C645800B21F58 /* rain-turqoise.mp3 in Resources */,
+				E5691DCE2C4C5CA100B21F58 /* Assets.xcassets in Resources */,
+				E5691E1B2C4C645800B21F58 /* rain-wood-elves.mp3 in Resources */,
+				E5691E202C4C645800B21F58 /* thunder-brewing.mp3 in Resources */,
+				E5691E1E2C4C645800B21F58 /* rain-old-timer.mp3 in Resources */,
+				E5691E212C4C645800B21F58 /* thunder-thors-judgement.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5691DD42C4C5CA100B21F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5691DDE2C4C5CA100B21F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5691DC22C4C5C9F00B21F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5691DCC2C4C5C9F00B21F58 /* ContentView.swift in Sources */,
+				E5691DCA2C4C5C9F00B21F58 /* rain_screen_iosApp.swift in Sources */,
+				E5691E262C4C65F500B21F58 /* SplashView.swift in Sources */,
+				E5691DF72C4C5DC300B21F58 /* RainFallingView.swift in Sources */,
+				E5691DF52C4C5DB700B21F58 /* RainDropView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5691DD22C4C5CA100B21F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5691DDB2C4C5CA100B21F58 /* rain_screen_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5691DDC2C4C5CA100B21F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5691DE72C4C5CA100B21F58 /* rain_screen_iosUITestsLaunchTests.swift in Sources */,
+				E5691DE52C4C5CA100B21F58 /* rain_screen_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5691DD82C4C5CA100B21F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5691DC52C4C5C9F00B21F58 /* rain screen */;
+			targetProxy = E5691DD72C4C5CA100B21F58 /* PBXContainerItemProxy */;
+		};
+		E5691DE22C4C5CA100B21F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5691DC52C4C5C9F00B21F58 /* rain screen */;
+			targetProxy = E5691DE12C4C5CA100B21F58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E5691DE82C4C5CA100B21F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5691DE92C4C5CA100B21F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5691DEB2C4C5CA100B21F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rain screen ios/Preview Content\"";
+				DEVELOPMENT_TEAM = JT724P5MC2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "rain screen mini";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rain-screen-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5691DEC2C4C5CA100B21F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rain screen ios/Preview Content\"";
+				DEVELOPMENT_TEAM = JT724P5MC2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "rain screen mini";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rain-screen-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5691DEE2C4C5CA100B21F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JT724P5MC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rain-screen-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rain screen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rain screen";
+			};
+			name = Debug;
+		};
+		E5691DEF2C4C5CA100B21F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JT724P5MC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rain-screen-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rain screen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rain screen";
+			};
+			name = Release;
+		};
+		E5691DF12C4C5CA100B21F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JT724P5MC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rain-screen-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "rain screen ios";
+			};
+			name = Debug;
+		};
+		E5691DF22C4C5CA100B21F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JT724P5MC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rain-screen-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "rain screen ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5691DC12C4C5C9F00B21F58 /* Build configuration list for PBXProject "rain screen mini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5691DE82C4C5CA100B21F58 /* Debug */,
+				E5691DE92C4C5CA100B21F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5691DEA2C4C5CA100B21F58 /* Build configuration list for PBXNativeTarget "rain screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5691DEB2C4C5CA100B21F58 /* Debug */,
+				E5691DEC2C4C5CA100B21F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5691DED2C4C5CA100B21F58 /* Build configuration list for PBXNativeTarget "rain screenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5691DEE2C4C5CA100B21F58 /* Debug */,
+				E5691DEF2C4C5CA100B21F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5691DF02C4C5CA100B21F58 /* Build configuration list for PBXNativeTarget "rain screenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5691DF12C4C5CA100B21F58 /* Debug */,
+				E5691DF22C4C5CA100B21F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5691DBE2C4C5C9F00B21F58 /* Project object */;
+}

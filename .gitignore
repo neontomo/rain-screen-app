@@ -1,7 +1,5 @@
 references
 
-"nextjs-not in use"
-
 # Xcode
 #
 .DS_Store
@@ -83,7 +81,6 @@ xcuserdata/
 *.pbxuser
 *.perspectivev3
 *.rsrc
-*.xcassets
 *.xcuserstate
 
 # User-specific files

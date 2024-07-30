@@ -31,6 +31,18 @@ nav h3 {
   font-size: 25px;
 }
 
+nav h3 a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav h3 a:hover {
+  opacity: 0.8;
+}
+
 a {
   color: #339cc2;
 }
@@ -54,12 +66,18 @@ img#icon {
 
 /* appstore button */
 
-.appstore-button.center {
-  text-align: center;
+#landing-appstore-buttons,
+#footer-appstore-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
 
-.appstore-button .download {
-  width: 150px;
+#footer-appstore-buttons {
+  justify-content: center;
+  text-align: center;
 }
 
 /* lists */
@@ -164,7 +182,6 @@ footer {
 /* landing blurbs */
 
 #landing {
-  /* grid cols*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -182,7 +199,7 @@ footer {
 /* transitions */
 
 .zoom-on-hover {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .zoom-on-hover:hover {
