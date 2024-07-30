@@ -2,9 +2,11 @@
 
 ![icon](https://rain-screen.netlify.app/img/icon.webp)
 
-a cute app to make your mac rain. great for studying and soothing your nerves.
+a cute app to make your mac rain. great for studying & soothing your nerves. available for mac + ipad + ios.
 
-[![download in app store](https://rain-screen.netlify.app/img/download.svg)](https://apps.apple.com/se/app/rain-screen/id6505049609)
+[![download in mac app store](https://rain-screen.netlify.app/img/download-mac.svg?v=2)](https://apple.co/3WsLHX6)
+
+[![download in ios app store](https://rain-screen.netlify.app/img/download.svg?v=2)](https://apple.co/4fnlYrI)
 
 [visit official website](https://rain-screen.netlify.app)
 
