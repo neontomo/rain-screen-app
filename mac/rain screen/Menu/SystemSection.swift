@@ -1,6 +1,9 @@
+import StoreKit
 import SwiftUI
 
 struct SystemSection: View {
+  @Environment(\.requestReview) var requestReview
+  @ObservedObject var settings = SettingsManager.shared
   let currentYear = String(Calendar.current.component(.year, from: Date()))
 
   var body: some View {
@@ -13,6 +16,12 @@ struct SystemSection: View {
             "rain screen website",
             action: {
               openURL("https://rain-screen.netlify.app")
+            })
+
+          Button(
+            "leave rating",
+            action: {
+              requestReview()
             })
 
           Button(
@@ -41,12 +50,6 @@ struct SystemSection: View {
               openURL("https://neontomo.com")
             })
 
-          Button(
-            "try my app \"overstimulated\"",
-            action: {
-              openURL("https://overstimulated.netlify.app")
-            })
-
           Divider()
 
           Button("\(currentYear) © Tomo Myrman", action: {}).disabled(true)
@@ -55,14 +58,7 @@ struct SystemSection: View {
       }
 
       Button("reset all settings") {
-        GlobalStateManager.shared.rainAnimation = true
-        GlobalStateManager.shared.rainSpeed = 2
-        GlobalStateManager.shared.rainAmount = 100
-        GlobalStateManager.shared.rainDirection = "left"
-        GlobalStateManager.shared.rainOpacity = 0.5
-        GlobalStateManager.shared.rainSound = true
-        GlobalStateManager.shared.rainSoundWhich = "rain-default.mp3"
-        GlobalStateManager.shared.rainVolume = 0.3
+        settings.resetAllSettings()
       }
 
       Button("check for updates") {

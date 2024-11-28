@@ -1,70 +1,74 @@
 import SwiftUI
 
 struct RainFallingView: View {
-  // @ObservedObject var globalStateManager = GlobalStateManager.shared
+  @StateObject var settings = SettingsManager.shared
   @State private var renderKey: Int = 0
 
-  @AppStorage("rainAnimation") var rainAnimation = true
-  @AppStorage("rainSound") var rainSound = true
-  @AppStorage("rainSoundWhich") var rainSoundWhich = "rain-default.mp3"
-  @AppStorage("rainSoundCustom") var rainSoundCustom = false
-  @AppStorage("rainSpeed") var rainSpeed: Double = 2
-  @AppStorage("rainDirection") var rainDirection = "left"
-  @AppStorage("rainAmount") var rainAmount = 100
-  @AppStorage("rainVolume") var rainVolume: Double = 0.3
-  @AppStorage("rainOpacity") var rainOpacity = 0.5
+  private var numberOfGroups: Int {
+    max(1, settings.rainAmount / 5)
+  }
 
-  func handleMusicChange(rainSound: Bool, musicFile: String, volume: Double) {
-    if rainSound {
-      MusicPlayer.playMusic(musicfile: musicFile, loops: -1, volume: volume)
-    } else {
-      MusicPlayer.stopMusic()
-    }
+  private struct RainSettings: Equatable {
+    let speed: Double
+    let opacity: Double
+    let amount: Int
+    let direction: String
+    let animation: Bool
+  }
+
+  private struct MusicSettings: Equatable {
+    let rainSound: Bool
+    let rainSoundWhich: String
+  }
+
+  private var currentMusicSettings: MusicSettings {
+    MusicSettings(
+      rainSound: settings.rainSound,
+      rainSoundWhich: settings.rainSoundWhich
+    )
+  }
+
+  private var currentRainSettings: RainSettings {
+    RainSettings(
+      speed: settings.rainSpeed,
+      opacity: settings.rainOpacity,
+      amount: settings.rainAmount,
+      direction: settings.rainDirection,
+      animation: settings.rainAnimation
+    )
   }
 
   var body: some View {
     GeometryReader { geometry in
-      if rainAnimation {
-        ZStack {
-          ForEach(0...rainAmount, id: \.self) { index in
-            RainDrop(
-              screenHeight: geometry.size.height,
-              screenWidth: geometry.size.width
-            )
+      if settings.rainAnimation {
+        LazyVStack(spacing: 0) {
+          ZStack {
+            ForEach(0..<numberOfGroups, id: \.self) { index in
+              RainDropGroup(
+                screenHeight: geometry.size.height,
+                screenWidth: geometry.size.width,
+                groupId: index
+              )
+            }
           }
-        }.id(renderKey)
+        }
+        .id(renderKey)
       }
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .drawingGroup()
     .edgesIgnoringSafeArea(.all)
     .onAppear {
-      handleMusicChange(rainSound: rainSound, musicFile: rainSoundWhich, volume: rainVolume)
+      MusicPlayer.updateMusic()
     }
-    .onChange(of: rainSound) {
-      handleMusicChange(rainSound: rainSound, musicFile: rainSoundWhich, volume: rainVolume)
+    .onChange(of: currentMusicSettings) { oldValue, newValue in
+      MusicPlayer.updateMusic()
     }
-    .onChange(of: rainSoundWhich) {
-      handleMusicChange(rainSound: rainSound, musicFile: rainSoundWhich, volume: rainVolume)
+    .onChange(of: settings.rainVolume) {
+      MusicPlayer.updateVolume()
     }
-    .onChange(of: rainVolume) {
-      MusicPlayer.setVolume(volume: rainVolume)
-    }
-    .onChange(of: [rainSpeed, rainOpacity]) {  // doubles
+    .onChange(of: currentRainSettings) { oldValue, newValue in
       renderKey += 1
-      print("increasing render key because of rainSpeed or rainOpacity")
-    }
-    .onChange(of: [rainAmount]) {  // integers
-      renderKey += 1
-      print("increasing render key because of rainAmount")
-    }
-    .onChange(of: rainDirection) {  // strings
-      renderKey += 1
-      print("increasing render key because of rainDirection")
-    }
-    .onChange(of: rainAnimation) {  // bool
-      renderKey += 1
-      print("increasing render key because of rainDirection")
     }
   }
 }

@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct CustomisationsSection: View {
-  @AppStorage("rainAnimation") var rainAnimation = true
-  @AppStorage("rainSpeed") var rainSpeed: Double = 2
-  @AppStorage("rainAmount") var rainAmount = 100
-  @AppStorage("rainDirection") var rainDirection = "left"
-  @AppStorage("rainOpacity") var rainOpacity = 0.5
+  @ObservedObject var settings = SettingsManager.shared
 
   var body: some View {
     Section(header: Text("customisations")) {
-      Toggle(isOn: $rainAnimation) {
-        Text("rain animation")
-      }.keyboardShortcut("a", modifiers: [.command])
+      Button(action: {
+        settings.rainAnimation.toggle()
+      }) {
+        Toggle(isOn: .constant(settings.rainAnimation)) {
+          Text("rain animation")
+        }.keyboardShortcut("a", modifiers: [.command])
+      }
 
       Menu("rain speed") {
         Section(header: Text("rain speed")) {
@@ -19,9 +19,11 @@ struct CustomisationsSection: View {
 
           ForEach(1...10, id: \.self) { rainSpeedItem in
             Button(action: {
-              GlobalStateManager.shared.rainSpeed = rainSpeedItem
+              settings.rainSpeed = Double(rainSpeedItem)
             }) {
-              Toggle(isOn: .constant(Int(rainSpeed) == Int(rainSpeedItem))) {
+              Toggle(
+                isOn: .constant(eq(settings.rainSpeed, Double(rainSpeedItem)))
+              ) {
                 Text("\(rainSpeedItem)s")
               }
             }
@@ -32,7 +34,7 @@ struct CustomisationsSection: View {
           Button(
             "reset",
             action: {
-              GlobalStateManager.shared.rainSpeed = 2
+              settings.rainSpeed = 2
             })
         }
       }
@@ -43,9 +45,9 @@ struct CustomisationsSection: View {
 
           ForEach([50, 100, 200, 300, 400, 500, 1000], id: \.self) { raindropsItem in
             Button(action: {
-              GlobalStateManager.shared.rainAmount = raindropsItem
+              settings.rainAmount = raindropsItem
             }) {
-              Toggle(isOn: .constant(rainAmount == raindropsItem)) {
+              Toggle(isOn: .constant(eq(settings.rainAmount, raindropsItem))) {
                 Text("\(raindropsItem)")
               }
             }
@@ -58,7 +60,7 @@ struct CustomisationsSection: View {
           Button(
             "reset",
             action: {
-              GlobalStateManager.shared.rainAmount = 100
+              settings.rainAmount = 100
             })
         }
       }
@@ -68,17 +70,17 @@ struct CustomisationsSection: View {
           Divider()
 
           Button(action: {
-            GlobalStateManager.shared.rainDirection = "right"
+            settings.rainDirection = "right"
           }) {
-            Toggle(isOn: .constant(rainDirection == "right")) {
+            Toggle(isOn: .constant(eq(settings.rainDirection, "right"))) {
               Text("left → right")
             }
           }
 
           Button(action: {
-            GlobalStateManager.shared.rainDirection = "left"
+            settings.rainDirection = "left"
           }) {
-            Toggle(isOn: .constant(rainDirection == "left")) {
+            Toggle(isOn: .constant(eq(settings.rainDirection, "left"))) {
               Text("right → left")
             }
           }
@@ -88,7 +90,7 @@ struct CustomisationsSection: View {
           Button(
             "reset",
             action: {
-              GlobalStateManager.shared.rainDirection = "left"
+              settings.rainDirection = "left"
             })
         }
       }
@@ -99,9 +101,11 @@ struct CustomisationsSection: View {
 
           ForEach(Array(stride(from: 10, through: 100, by: 10)), id: \.self) { rainOpacityItem in
             Button(action: {
-              GlobalStateManager.shared.rainOpacity = Double(rainOpacityItem) / 100
+              settings.rainOpacity = Double(rainOpacityItem) / 100
             }) {
-              Toggle(isOn: .constant(rainOpacity == Double(rainOpacityItem) / 100)) {
+              Toggle(
+                isOn: .constant(eq(settings.rainOpacity, Double(rainOpacityItem) / 100))
+              ) {
                 Text("\(rainOpacityItem)%")
               }
             }
@@ -112,7 +116,7 @@ struct CustomisationsSection: View {
           Button(
             "reset",
             action: {
-              GlobalStateManager.shared.rainOpacity = 0.5
+              settings.rainOpacity = 0.5
             })
         }
       }

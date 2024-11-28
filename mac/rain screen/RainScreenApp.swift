@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   static private(set) var instance: AppDelegate!
 
-  let useMultipleScreens = GlobalStateManager.shared.useMultipleScreens
+	let useMultipleScreens = SettingsManager.shared.useMultipleScreens
 
   public func createWindow(for screen: NSScreen) {
     let screenRect = screen.frame

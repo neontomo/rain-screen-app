@@ -18,6 +18,7 @@
 		E51BE7212C39433C00DCD80C /* rain-window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E51BE7182C39433C00DCD80C /* rain-window.mp3 */; };
 		E53AB52B2C397EA300E14FB9 /* MonitorSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB52A2C397EA300E14FB9 /* MonitorSection.swift */; };
 		E53AB52D2C398B3E00E14FB9 /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB52C2C398B3E00E14FB9 /* Popups.swift */; };
+		E55C87272CF91D8100B11A12 /* Equals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C87262CF91D8100B11A12 /* Equals.swift */; };
 		E55DBDBD2C355A6C004D90DF /* rain-default.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */; };
 		E58523712C35A56B00A3BD4F /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523702C35A56B00A3BD4F /* OpenURL.swift */; };
 		E58523732C35A5BB00A3BD4F /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58523722C35A5BB00A3BD4F /* StateManager.swift */; };
@@ -47,6 +48,7 @@
 		E536BDB52C352256004089B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53AB52A2C397EA300E14FB9 /* MonitorSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorSection.swift; sourceTree = "<group>"; };
 		E53AB52C2C398B3E00E14FB9 /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
+		E55C87262CF91D8100B11A12 /* Equals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equals.swift; sourceTree = "<group>"; };
 		E55DBDBC2C355A6C004D90DF /* rain-default.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-default.mp3"; sourceTree = "<group>"; };
 		E58523702C35A56B00A3BD4F /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
 		E58523722C35A5BB00A3BD4F /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				E58523702C35A56B00A3BD4F /* OpenURL.swift */,
 				E58523722C35A5BB00A3BD4F /* StateManager.swift */,
 				E53AB52C2C398B3E00E14FB9 /* Popups.swift */,
+				E55C87262CF91D8100B11A12 /* Equals.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				E58523732C35A5BB00A3BD4F /* StateManager.swift in Sources */,
 				E59CA68C2C362BF400DEA874 /* SystemSection.swift in Sources */,
 				E58523752C35A62000A3BD4F /* MenuItemsApp.swift in Sources */,
+				E55C87272CF91D8100B11A12 /* Equals.swift in Sources */,
 				E59CA68A2C362B8900DEA874 /* SoundsSection.swift in Sources */,
 				E5A6D5EF2C32633A005BEC1F /* RainScreenApp.swift in Sources */,
 			);

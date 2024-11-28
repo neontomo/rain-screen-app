@@ -5,52 +5,8 @@ import UniformTypeIdentifiers
 // ideas for sounds:
 // wind, fire, forest, ocean, river, waterfall, birds, crickets, frogs, night, train, city, cafe, white noise, pink noise, brown noise, fan, clock, music, ambience silence
 
-func openFilePanel() {
-  let dialog = NSOpenPanel()
-  dialog.title = "Choose your mp3"
-  dialog.showsResizeIndicator = true
-  dialog.showsHiddenFiles = false
-  dialog.canChooseFiles = true
-  dialog.canChooseDirectories = false
-  dialog.allowsMultipleSelection = false
-  dialog.allowedContentTypes = [UTType.mp3]
-
-  if dialog.runModal() == NSApplication.ModalResponse.OK {
-    if let result = dialog.url {
-      let fileName = result.lastPathComponent
-
-      let fileManager = FileManager.default
-      let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-
-      let destinationURL = documentsURL.appendingPathComponent(fileName)
-
-      // Check if file already exists at destination
-      if fileManager.fileExists(atPath: destinationURL.path) {
-        print("file already exists at destination.")
-
-        GlobalStateManager.shared.rainSoundWhich = fileName
-        GlobalStateManager.shared.rainSoundCustom = true
-      } else {
-        do {
-          try fileManager.copyItem(at: result, to: destinationURL)
-          print("copied to: \(destinationURL)")
-
-          GlobalStateManager.shared.rainSoundWhich = fileName
-          GlobalStateManager.shared.rainSoundCustom = true
-        } catch {
-          createGenericPopup(
-            title: "error", message: "could not copy file to the correct location on your computer"
-          )
-        }
-      }
-    }
-  }
-}
-
 struct SoundsSection: View {
-  @AppStorage("rainSound") var rainSound = true
-  @AppStorage("rainSoundWhich") var rainSoundWhich = "rain-default.mp3"
-  @AppStorage("rainVolume") var rainVolume: Double = 0.3
+  @ObservedObject var settings = SettingsManager.shared
 
   var rainSounds = [
     "rain-default.mp3": "turqoise",
@@ -70,9 +26,13 @@ struct SoundsSection: View {
 
   var body: some View {
     Section(header: Text("sounds")) {
-      Toggle(isOn: $rainSound) {
-        Text("rain sound")
-      }.keyboardShortcut("m", modifiers: [.command])
+      Button(action: {
+        settings.rainSound.toggle()
+      }) {
+        Toggle(isOn: .constant(settings.rainSound)) {
+          Text("rain sound")
+        }.keyboardShortcut("m", modifiers: [.command])
+      }
 
       Menu("sound volume") {
         Section(header: Text("sound volume")) {
@@ -80,10 +40,12 @@ struct SoundsSection: View {
 
           ForEach(Array(stride(from: 10, through: 100, by: 10)), id: \.self) { rainVolumeItem in
             Button(action: {
-              GlobalStateManager.shared.rainVolume = Float(rainVolumeItem) / 100
+              settings.rainVolume = rainVolumeItem
             }) {
-              Toggle(isOn: .constant(Float(rainVolume) == Float(rainVolumeItem) / 100)) {
-                Text("\(rainVolumeItem)%")
+              Toggle(
+                isOn: .constant(eq(settings.rainVolume, rainVolumeItem))
+              ) {
+                Text("\(Int(rainVolumeItem))%")
               }
             }
           }
@@ -93,7 +55,7 @@ struct SoundsSection: View {
           Button(
             "reset",
             action: {
-              GlobalStateManager.shared.rainVolume = 0.3
+              settings.rainVolume = 30
             })
         }
       }
@@ -106,11 +68,10 @@ struct SoundsSection: View {
 
           ForEach(rainSounds.sorted(by: <), id: \.key) { rainSoundItem in
             Button(action: {
-              GlobalStateManager.shared.rainSoundWhich = rainSoundItem.key
-              GlobalStateManager.shared.rainSoundCustom = false
-
+              settings.rainSoundWhich = rainSoundItem.key
+              settings.rainSoundCustom = false
             }) {
-              Toggle(isOn: .constant(rainSoundItem.key == rainSoundWhich)) {
+              Toggle(isOn: .constant(eq(rainSoundItem.key, settings.rainSoundWhich))) {
                 Text(rainSoundItem.value)
               }
             }
@@ -122,10 +83,10 @@ struct SoundsSection: View {
 
           ForEach(thunderSounds.sorted(by: <), id: \.key) { thunderSoundItem in
             Button(action: {
-              GlobalStateManager.shared.rainSoundWhich = thunderSoundItem.key
-              GlobalStateManager.shared.rainSoundCustom = false
+              settings.rainSoundWhich = thunderSoundItem.key
+              settings.rainSoundCustom = false
             }) {
-              Toggle(isOn: .constant(thunderSoundItem.key == rainSoundWhich)) {
+              Toggle(isOn: .constant(eq(thunderSoundItem.key, settings.rainSoundWhich))) {
                 Text(thunderSoundItem.value)
               }
             }
@@ -146,12 +107,11 @@ struct SoundsSection: View {
           Button(
             "reset",
             action: {
-              GlobalStateManager.shared.rainSoundWhich = "rain-default.mp3"
-              GlobalStateManager.shared.rainSoundCustom = false
+              settings.rainSoundWhich = "rain-default.mp3"
+              settings.rainSoundCustom = false
             })
         }
       }
-
     }
   }
 }

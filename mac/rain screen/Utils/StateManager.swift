@@ -1,73 +1,33 @@
 import SwiftUI
 
-class GlobalStateManager: ObservableObject {
-  static let shared: GlobalStateManager = GlobalStateManager()
+class SettingsManager: ObservableObject {
+  static let shared = SettingsManager()
 
-  @Published var rainAnimation: Bool = UserDefaults.standard.bool(forKey: "rainAnimation") {
-    didSet {
-      UserDefaults.standard.set(rainAnimation, forKey: "rainAnimation")
-    }
+  @AppStorage("rainAnimation") var rainAnimation: Bool = true
+  @AppStorage("rainSpeed") var rainSpeed: Double = 2
+  @AppStorage("rainAmount") var rainAmount: Int = 100
+  @AppStorage("rainDirection") var rainDirection: String = "left"
+  @AppStorage("rainOpacity") var rainOpacity: Double = 0.5
+  @AppStorage("useMultipleScreens") var useMultipleScreens: Bool = true
+  @AppStorage("rainSound") var rainSound: Bool = true
+  @AppStorage("rainSoundWhich") var rainSoundWhich: String = "rain-default.mp3"
+  @AppStorage("rainSoundCustom") var rainSoundCustom: Bool = false
+  @AppStorage("rainVolume") var rainVolume: Double = 30
+
+  private init() {
+    // null
   }
 
-  @Published var rainSpeed: Int = UserDefaults.standard.integer(forKey: "rainSpeed") {
-    didSet {
-      UserDefaults.standard.set(rainSpeed, forKey: "rainSpeed")
-    }
-  }
-
-  @Published var rainAmount: Int = UserDefaults.standard.integer(forKey: "rainAmount") {
-    didSet {
-      UserDefaults.standard.set(rainAmount, forKey: "rainAmount")
-    }
-  }
-
-  @Published var rainDirection: String =
-    UserDefaults.standard.string(forKey: "rainDirection") ?? "left"
-  {
-    didSet {
-      UserDefaults.standard.set(rainDirection, forKey: "rainDirection")
-    }
-  }
-
-  @Published var rainOpacity: Double = UserDefaults.standard.double(forKey: "rainOpacity") {
-    didSet {
-      UserDefaults.standard.set(rainOpacity, forKey: "rainOpacity")
-    }
-  }
-
-  @Published var rainSound: Bool = UserDefaults.standard.bool(forKey: "rainSound") {
-    didSet {
-      UserDefaults.standard.set(rainSound, forKey: "rainSound")
-    }
-  }
-
-  @Published var rainVolume: Float = UserDefaults.standard.float(forKey: "rainVolume") {
-    didSet {
-      UserDefaults.standard.set(rainVolume, forKey: "rainVolume")
-    }
-  }
-
-  @Published var rainSoundWhich: String =
-    UserDefaults.standard.string(forKey: "rainSoundWhich") ?? "rain-default.mp3"
-  {
-    didSet {
-      UserDefaults.standard.set(rainSoundWhich, forKey: "rainSoundWhich")
-    }
-  }
-
-  @Published var useMultipleScreens: Bool =
-    UserDefaults.standard.bool(forKey: "useMultipleScreens")
-  {
-    didSet {
-      UserDefaults.standard.set(useMultipleScreens, forKey: "useMultipleScreens")
-    }
-  }
-
-  @Published var rainSoundCustom: Bool =
-    UserDefaults.standard.bool(forKey: "rainSoundCustom")
-  {
-    didSet {
-      UserDefaults.standard.set(rainSoundCustom, forKey: "rainSoundCustom")
-    }
+  func resetAllSettings() {
+    rainAnimation = true
+    rainSpeed = 2
+    rainAmount = 100
+    rainDirection = "left"
+    rainOpacity = 0.5
+    useMultipleScreens = true
+    rainSound = true
+    rainSoundWhich = "rain-default.mp3"
+    rainSoundCustom = false
+    rainVolume = 30
   }
 }
